@@ -1,0 +1,89 @@
+body {
+    background: rgb(12, 12, 50);
+}
+
+.flex-container {
+    display: flex;
+    padding-top: 50px;
+}
+
+.flex-child {
+    flex: 1;
+}
+
+.flex-child img {
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.flex-child:first-child {
+    margin-right: 50px;
+}
+
+.box{
+    background: blue;
+    display: block;
+    margin-left: 0;
+    margin-right: auto;
+    margin-top:50px;
+    height: 370px;
+    width: 400px;
+    padding: 20px;
+}
+
+.box h1 {
+    text-align: center;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+input[type=text] {
+    background-color: transparent;
+    border: 1px solid rgb(180, 180, 180);
+    color: white;
+    opacity: 85%;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+input[type=text2] {
+    background-color: transparent;
+    border: 1px solid rgb(180, 180, 180);
+    color: white;
+    opacity: 85%;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+input[type=text3] {
+    background-color: transparent;
+    border: 1px solid rgb(180, 180, 180);
+    color: white;
+    opacity: 85%;
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+::placeholder {
+    color: white;
+  }
+
+.button {
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    margin: 8px 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+}
