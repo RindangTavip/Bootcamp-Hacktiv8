@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Challenge 1_1</title>
+    </head>
+
+    <script>
+        var passBaru = prompt('Register password baru: ');
+
+        function inputPassword(string) {
+            if (string !== passBaru) {  
+                alert('Password Salah!');
+            } else {
+                alert('Password Benar!');
+            }
+        }
+
+        const string = prompt('Input password: ');  
+        const value = inputPassword(string);
+        console.log(value);
+    </script>
+</html>

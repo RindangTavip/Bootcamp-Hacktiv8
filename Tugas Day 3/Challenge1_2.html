@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Challenge 1_2</title>
+    </head>
+
+    <script>
+        function inputPassword(nilai) {
+            if (nilai <= 100 && nilai >= 80) {  
+                alert('your grade is A');
+            } else if (nilai < 80 && nilai >= 60) {
+                alert('your grade is B');
+            } else if (nilai < 60 && nilai >= 40) {
+                alert('your grade is C');
+            } else if (nilai < 40 && nilai >= 1) {
+                alert('your grade is D');
+            } else if (nilai > 100 && nilai < 1) {
+                alert('cannot calculate your grade');
+            } else {
+                return;
+            }
+        }
+
+        const nilai = prompt('Input nilai: ');  
+        const value = inputPassword(nilai);
+        console.log(value);
+    </script>
+</html>
