@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Exercises 4</title>
+    </head>
+
+    <script>
+    function menerimaAngka(){
+        const number = [2, 3, 20, 21, "kata"];
+        return number;
+    }
+
+    function cekGanjilGenap(){
+        var a = menerimaAngka();
+        for(let i = 0; i < a.length; i++) {
+            if(!isNaN(a[i])){
+                if(a[i] % 2 == 0) {
+                console.log("genap");
+                }
+                else {
+                    console.log("ganjil");
+                }
+            } else {
+                console.log("Invalid Data")
+            }
+        }
+    }
+    cekGanjilGenap();
+
+    </script>
+</html>

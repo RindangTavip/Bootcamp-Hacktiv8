@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>Exercises 2</title>
+    </head>
+
+    <script>
+    const person = {
+        nama_depan: 'Rindang',
+        nama_belakang: 'Tavip Supriyanto',
+        hobi: ['Film'],
+        angka_favorit: '25',
+        memakai_kacamata: false
+    }
+
+    console.log(person.nama_depan);
+    console.log(person.nama_belakang);
+    console.log(person.hobi);
+    console.log(person.angka_favorit);
+    console.log(person.memakai_kacamata);
+    
+    // person.nama_lengkap = function() {
+    //     return this.nama_depan + " " + this.nama_belakang;
+    // }
+    // console.log(person.nama_lengkap());
+
+    person.nama_lengkap = person.nama_depan + " "  + person.nama_belakang;
+    console.log(person.nama_lengkap)
+
+    person.angka_favorit = 1;
+    console.log(person.angka_favorit);
+
+    person.hobi.push('Musik');
+    console.log(person.hobi[1]);
+
+    person.lulusan = "hacktiv8";
+    console.log(person.lulusan);
+
+    for (i = 0; i < person.hobi.length; i++){
+        console.log(person.hobi[i]);
+    }
+
+    for (const key in person) {
+        console.log(`${key}`);
+    }
+
+    for (const key in person) {
+        console.log(`${person[key]}`);
+    }
+    
+    for (const key in person) {
+        console.log(`${key}: ${person[key]}`);
+    }
+
+    </script>
+</html>
