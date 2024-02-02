@@ -15,7 +15,6 @@
 
         echo "<h2>" . "Hasil Perhitungan Gaji" . "</h2>";
         echo "Gaji Bruto: " . $gajiBruto . "<br>";
-        echo "Gaji Bruto: " . $gajiBruto . "<br>";
         echo "Pajak Penghasilan: " . $pajakPenghasilan . "<br>";
         echo "Asuransi Kesehatan: " . $asuransiKesehatan . "<br>";
         echo "Gaji Bersih: " . $gajiBersih;
