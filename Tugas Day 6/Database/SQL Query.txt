@@ -1,0 +1,32 @@
+CREATE DATABASE dbTugasCRUD;
+
+CREATE TABLE users (
+    userID INT PRIMARY KEY AUTO_INCREMENT,
+    username VARCHAR(255) NOT NULL,
+    password VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE kategori (
+    kategoriID INT PRIMARY KEY AUTO_INCREMENT,
+    kategoriName VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE posts (
+    postID INT PRIMARY KEY AUTO_INCREMENT,
+    judul VARCHAR(255) NOT NULL,
+    konten TEXT NOT NULL,
+    gambar VARCHAR(255) NOT NULL,
+    userID INT,
+    kategoriID INT,
+    FOREIGN KEY (userID) REFERENCES users(userID),
+    FOREIGN KEY (kategoriID) REFERENCES kategori(kategoriID)
+);
+
+CREATE TABLE komentar (
+    komentarID INT PRIMARY KEY AUTO_INCREMENT,
+    postID INT,
+    userID INT,
+    isiKomentar TEXT,
+    FOREIGN KEY (postID) REFERENCES posts(postID),
+    FOREIGN KEY (userID) REFERENCES users(userID)
+);
