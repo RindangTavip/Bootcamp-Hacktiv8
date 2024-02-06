@@ -15,6 +15,12 @@ $postID = (int)$_GET['id'];
 $query = "SELECT * FROM posts INNER JOIN kategori ON posts.kategoriID = kategori.kategoriID WHERE postID = $postID";
 $result = $conn->query($query);
 
+$query2 ="SELECT * FROM kategori";
+$result2 = $conn->query($query2);
+if($result2->num_rows > 0){
+    $options= mysqli_fetch_all($result2, MYSQLI_ASSOC);
+}
+
 // Periksa apakah posting ditemukan
 if ($result->num_rows == 0) {
     echo "Posting tidak ditemukan.";
@@ -47,8 +53,13 @@ $post = $result->fetch_assoc();
     <label for="kategori">Kategori:</label>
     <select id="kategori" name="kategori" required>
         <option value="<?php echo $post['kategoriID']; ?>"><?php echo $post['kategoriName']; ?></option>
-        <option value="1">Kategori 1</option>
-        <option value="2">Kategori 2</option>
+        <?php 
+        foreach ($options as $option) {
+        ?>
+        <option value="<?php echo $option['kategoriID'];?>"><?php echo $option['kategoriName'];?></option>
+        <?php
+        }
+        ?>
     </select><br>
 
     <label for="gambar">Gambar Utama:</label>

@@ -10,7 +10,7 @@ if (!isset($_SESSION['username'])) {
 
 $query ="SELECT * FROM kategori";
 $result = $conn->query($query);
-if($result->num_rows> 0){
+if($result->num_rows > 0){
     $options= mysqli_fetch_all($result, MYSQLI_ASSOC);
 }
 
