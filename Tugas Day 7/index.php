@@ -43,8 +43,8 @@ $db = new database();
 				<tr>
                     <th>No</th>
                     <th>Nama</th>
-                    <th>Alamat</th>
-                    <th>Usia</th>
+                    <th>Email</th>
+                    <th>No. Telpon</th>
                     <th>Opsi</th>
 				</tr>
 			</thead>
