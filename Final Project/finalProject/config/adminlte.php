@@ -316,7 +316,7 @@ return [
             'url'         => 'admin/dashboard',
             'icon'        => 'far fa-fw fa-folder-open',
         ],
-        ['header' => 'Manajemen Produk'],
+        ['header' => 'Product Management'],
         [
             'text' => 'Customer',
             'url'  => 'admin/customer',
