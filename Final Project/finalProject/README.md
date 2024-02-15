@@ -7,9 +7,23 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## Informasi Login
+## Login Information
 <dl>
     <dt>email: admin@gmail.com</dt>
     <dt>password: admin123</dt>
 </dl>
+
+## Running Test
+
+To access final project, run the following command
+
+```bash
+  npm run dev
+```
+
+Open new terminal and run the following command
+
+```bash
+  php artisan serve
+```
 
